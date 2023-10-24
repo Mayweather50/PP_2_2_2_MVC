@@ -1,9 +1,6 @@
-package web.Model;
+package web.model;
 
-import javax.persistence.*;
 
-@Entity
-@Table()
 public class Car {
     public Car(){}
 
@@ -13,12 +10,11 @@ public class Car {
         this.model = model;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-    @Column(name = "marka")
+
     private String marka;
-    @Column(name = "model")
+
     private String model;
     public Long getId() {
         return id;
